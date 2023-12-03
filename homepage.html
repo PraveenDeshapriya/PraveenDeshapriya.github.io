@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 1em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        .recipe {
+            margin: 1em 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Sri Lankan Recipes</h1>
+    <p>Your go-to place for mouthwatering dishes</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#catalog">Recipe Catalog</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Welcome to Delicious Recipes!</h2>
+    <p>Explore a variety of delectable dishes from different cuisines.</p>
+    <img src="dish1.jfif" alt="Delicious Dish" width="300" height="200">
+    <img src="dish2.jfif" alt="Delicious Dish" width="300" height="200">
+    <img src="dish3.jfif" alt="Delicious Dish" width="300" height="200">
+</div>
+
+<div class="container" id="catalog">
+    <h2>Recipe Catalog</h2>
+    <div class="recipe">
+	<a href="recipe1.html"><h3>APPETIZERS- APPAM</h3>
+	</a>
+        <img src="recipe1.jfif" alt="Recipe 1" width="300" height="200">
+        <p>Appam (appa or hoppers) is a type of bowl-shaped thin pancake prepared with a fermented batter composed of rice (or rice flour) and coconut milk that is popular in South India and Sri Lanka.</p>
+    </div>
+    <div class="recipe">
+	<a href="recipe2.html"><h3>MAIN DISHES-PARIPPU CURRY</h3>
+	</a>
+        <img src="recipe2.jfif" alt="Recipe 2" width="300" height="200">
+        <p>Parippu curry (or dhal curry) is a traditional Sri Lankan dish prepared with masoor dal (red lentils), cooked in coconut milk and scented with mustard seeds, saffron, turmeric, cumin and fenugreek.</p>
+    </div>
+    <div class="recipe">
+	<a href="recipe3.html"><h3>BREADS-CHAPATI</h3>
+	</a>
+        <img src="recipe3.jfif" alt="Recipe 3" width="300" height="200">
+        <p>A chapati (or roti) is a thin flatbread native to the Indian subcontinent, popular in India, Pakistan, Nepal, Sri Lanka, Bangladesh, Indonesia, Singapore, Maldives, and Malaysia.</p>
+    </div>
+    <div class="recipe">
+	<a href="recipe4.html"><h3>DESSERTS-WATTALAPAN</h3>
+	</a>
+        <img src="recipe4.jfif" alt="Recipe 4" width="300" height="200">
+        <p>Wattalapan, one of the most popular desserts of Sri Lanka, is a sort of relatively dense flan with an incredibly silky texture, whose scents reflect the exoticism and cultural blend of this island.</p>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? Reach out to us!</p>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2023 Delicious Recipes</p>
+</footer>
+
+</body>
+</html>
